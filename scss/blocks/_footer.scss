@@ -1,0 +1,92 @@
+.footer {
+    padding-left: 16px;
+    padding-right: 112px;
+    height: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__divider {
+        border: 1px solid #034B3C;
+    }
+
+    &__logo {
+        color: #034B3C;
+        font-size: 120px;
+        font-weight: 700;
+        line-height: 120px;
+        text-transform: uppercase;
+    }
+
+    &__wrapper {
+        width: 512px;
+    }
+
+    &__text {
+        color: #034B3C;
+        font-family: 'Prompt', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.2px;
+        text-transform: uppercase;
+        margin-bottom: 31px;
+    }
+
+    &__form {
+        display: flex;
+        gap: 48px;
+    }
+
+    &__input {
+        display: flex;
+        width: 307px;
+        height: 34px;
+        padding: 8px 16px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 83px;
+        border: 1px solid #034B3C;
+        background: #CCDEF6;
+
+        &::placeholder {
+            color: #034B3C;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14.4px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__submit {
+        display: flex;
+        width: 76px;
+        height: 34px;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 83px;
+        border: 1px solid #034B3C;
+        color: #034B3C;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14.4px;
+        text-transform: uppercase;
+        background: #CCDEF6;
+        transition: .5s all;
+        cursor: pointer;
+
+        &:hover {
+            background: #034B3C;
+            color: #CCDEF6;
+        }
+    }
+
+    .invalid {
+        border: 1px solid red;
+    }
+
+    .invalid-msg {
+        color: red;
+    }
+}

@@ -1,0 +1,26 @@
+@keyframes marquee {
+    from {
+        transform: translateX(100%); 
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+@keyframes flattenTextX {
+    from {
+        transform: scaleX(0.1); 
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes flattenTextY {
+    from {
+        transform: rotate(90deg) scaleY(0.1); 
+    }
+    to {
+        transform: rotate(90deg) scaleY(1);
+    }
+}

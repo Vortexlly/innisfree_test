@@ -1,0 +1,47 @@
+.header {
+    height: 60px;
+    padding: 7px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 36px;
+    }
+
+    &__item {
+        font-size: 16px;
+        font-weight: 700;
+        position: relative;
+    }
+
+    &__link {
+        color: #034B3C;
+        text-decoration: none;
+        transition: .5s all;
+
+        &:hover {
+            text-decoration: underline;
+            color: #05ac90;
+        }
+    }
+
+    &__logo {
+        width: 64px;
+        height: 46px;
+        color: #034B3C;
+        font-size: 16px;
+        font-weight: 700;
+        position: relative;
+
+        span {
+            display: block;
+            transform: rotate(90deg);
+            position: absolute;
+            top: 13px;
+            left: 30px;
+        }
+    }
+}

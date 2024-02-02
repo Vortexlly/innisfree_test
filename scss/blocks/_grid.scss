@@ -1,0 +1,94 @@
+@import '../base/animation';
+
+.grid {
+    display: grid;
+    grid-template: 485px 485px / 640px 640px;
+    justify-items: center;
+    align-items: center;
+
+    &__bigtext {
+        color: #034B3C;
+        font-size: 252px;
+        font-weight: 700;
+        line-height: 243.18px;
+        margin: 0;
+        user-select: none;
+        margin-bottom: 52px;
+    }
+
+    &__item {
+        width: 100%;
+        height: 100%;
+        padding-left: 16px;
+        &-text {
+            width: 578px;
+            color: #034B3C;
+            font-family: 'Prompt', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28.8px;
+            text-transform: uppercase;
+            span {
+                font-family: 'Prompt', sans-serif;
+                font-style: italic;
+                font-weight: 700;
+            }
+        }
+        &:nth-child(1) {
+            border-right: 1px solid #034B3C;
+            border-bottom: 1px solid #034B3C;
+        }
+        &:nth-child(2) {
+            border-left: 1px solid #034B3C;
+            border-bottom: 1px solid #034B3C;
+        }
+        &:nth-child(3) {
+            border-right: 1px solid #034B3C;
+            border-top: 1px solid #034B3C;
+            padding: 70px 80px;
+        }
+        &:nth-child(4) {
+            padding-top: 65px;
+            border-top: 1px solid #034B3C;
+            border-left: 1px solid #034B3C;
+            div {
+                width: 500px;
+            }
+        }
+    }
+
+    &__img {
+        height: 469.682px;
+        transform: rotate(-6.35deg);
+    }
+
+    &__more {
+        margin-top: 204px;
+    }
+
+    &__wrapper {
+        width: 456px;
+        height: 324px;
+        position: relative;
+    }
+
+    &__text1, &__text2 {
+        color: #034B3C;
+        font-size: 120px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__text1 {
+        transform: scaleX(0);
+        animation: flattenTextX 1s ease-in-out .5s forwards;
+    }
+
+    &__text2 {
+        transform: scaleY(0) rotate(90deg);
+        position: absolute;
+        top: 97px;
+        right: -60px;
+        animation: flattenTextY 1s ease-in-out 1s forwards;
+    }
+}

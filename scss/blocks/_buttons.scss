@@ -1,0 +1,27 @@
+.btn {
+    display: flex;
+    width: 109px;
+    height: 35px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 35px;
+    border: 1px solid #034B3C;
+    background: #CCDEF6;
+    color: #034B3C;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s all;
+    cursor: pointer;
+
+    &_wide {
+        width: 167px;
+    }
+
+    &:hover {
+        background: #034B3C;
+        color: #CCDEF6;
+    }
+}

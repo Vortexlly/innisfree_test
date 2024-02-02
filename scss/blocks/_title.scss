@@ -1,0 +1,27 @@
+.title {
+    width: 100%;
+
+    &__divider {
+        border: 1px solid #034B3C;
+        &_product {
+            border: 1px solid #CCDEF6;
+        }
+    }
+
+    &__text {
+        color: #034B3C;
+        font-size: 252px;
+        font-weight: 700;
+        line-height: 243.18px;
+        margin: 0;
+        user-select: none;
+
+        &_product {
+            color: #CCDEF6;
+            font-size: 167px;
+            font-weight: 700;
+            line-height: 167px;
+            text-transform: uppercase;
+        }
+    }
+}

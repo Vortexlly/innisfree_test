@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #afc1d6;
+}
+
+.container {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #CCDEF6;
+}
+
+@import 'blocks/buttons';
+@import 'blocks/header';
+@import 'blocks/title';
+@import 'blocks/grid';
+@import 'blocks/product';
+@import 'blocks/footer';
